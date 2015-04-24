@@ -61,7 +61,7 @@ class StarterSite extends TimberSite {
 	}
 
 	function add_i18n() {
-		load_theme_textdomain( 'mymagic', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'rapido', get_template_directory() . '/languages' );
 	}
 }
 
