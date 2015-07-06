@@ -46,10 +46,10 @@ class StarterSite extends TimberSite {
 
 	function add_to_context( $context ) {
 		$context['languages'] = pll_the_languages(array('echo'=>0, 'hide_current'=>1));
-		$context['current_language'] = strtoupper(pll_current_language());
 		$context['menu'] = new TimberMenu('menu_'.pll_current_language());
 		$context['site'] = $this;
 		$context['current_user'] = new TimberUser();
+		$context['current_language'] = strtoupper(pll_current_language());
 		return $context;
 	}
 
