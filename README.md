@@ -9,6 +9,20 @@
 - Package Managers (Bower, Composer, NPM)
 - Sourcemapping
 
+# Installation
+
+```
+cd /wordpress/wp-content/theme/
+git clone git@github.com:imranismail/rapido.git
+npm install && bower install && composer install
+```
+
+Edit `gulpfile.babel.js` and change `rapido.dev` to your wordpress installation host in your local machine.
+
+for ease of setup I myself prefer to use bedrock as the development environment.
+
+now run `gulp` and your assets should be compiled, served and synced to your browser.
+
 # Gulp Tasks
 
 ```
@@ -22,14 +36,6 @@
 ├── webpack:production
 ├── webpack:development
 └── browser-sync
-```
-
-# Installation
-
-```
-cd /wordpress/wp-content/theme/
-git clone git@github.com:imranismail/rapido.git
-npm install && bower install && composer install
 ```
 
 # Credits
