@@ -48,6 +48,6 @@ gulp.task('webpack:development', (callback) => {
 
 gulp.task('browser-sync', () => {
   browserSync.init(['assets/dist/*'], {
-    proxy: 'bedrock.dev'
+    proxy: 'rapido.dev'
   });
 });
