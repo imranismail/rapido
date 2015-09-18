@@ -1,33 +1,30 @@
 {
-    "name": "upstatement/timber-starter-theme",
-    "description": "Starter theme to build a Timber theme",
-    "type":"wordpress-theme",
-    "minimum-stability" : "dev",
+    "name": "imranismail/rapido",
+    "type": "wordpress-theme",
+    "description": "Rapido Wordpress Theme Framework.",
+    "keywords": ["wordpress", "theme", "framework"],
+    "license": "MIT",
     "authors": [
         {
-            "name": "jarednova",
-            "email": "jared@upstatement.com"
+            "name": "Imran Ismail",
+            "email": "imran.codely@gmail.com"
         }
     ],
-	"require-dev": {
-		"jarednova/timber": "dev-master"
-	},
-	"repositories": [
-		{
-			"type" : "package",
-			"package" : {
-				"name" : "jarednova/php-router",
-				"version" : "1.0.1",
-				"dist" : {
-					"url" : "https://github.com/jarednova/PHP-Router/archive/fix_psr_0.zip",
-					"type" : "zip"
-				},
-				"autoload": {
-					"psr-0": {
-						"PHPRouter": "src/"
-					}
-				}
-			}
-		}
-	]
+    "minimum-stability": "stable",
+    "extra": {
+        "installer-paths": {
+            "../../plugins/{$name}/": ["wpackagist-plugin/*", "type:wordpress-plugin"]
+        }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "wpackagist-plugin/timber-library": "0.21.*",
+        "wpackagist-plugin/polylang": "1.7.*"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://wpackagist.org"
+        }
+    ]
 }
