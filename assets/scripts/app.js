@@ -1,3 +1,1 @@
-(function() {
-  return console.log("Hello World");
-})();
+import "../styles/app.scss";
